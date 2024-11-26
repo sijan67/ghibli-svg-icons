@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Glow effect -->
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <radialGradient id="fireGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#fff700;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#ff4500;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Glow circle -->
+  <circle cx="100" cy="100" r="45" fill="url(#fireGlow)" opacity="0.5">
+    <animate
+      attributeName="r"
+      values="45;48;45"
+      dur="1s"
+      repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Main flame body - now with pointier peaks -->
+  <path d="M70 120 Q85 100 100 70 Q115 100 130 120 Q115 140 85 140 Q70 140 70 120" 
+    fill="#ff4500" 
+    filter="url(#glow)">
+    <animate
+      attributeName="d"
+      values="M70 120 Q85 100 100 70 Q115 100 130 120 Q115 140 85 140 Q70 140 70 120;
+              M72 118 Q87 95 100 65 Q113 95 128 118 Q113 138 87 138 Q72 138 72 118;
+              M70 120 Q85 100 100 70 Q115 100 130 120 Q115 140 85 140 Q70 140 70 120"
+      dur="0.5s"
+      repeatCount="indefinite"/>
+  </path>
+
+  <!-- Inner flame - sharper points -->
+  <path d="M80 120 Q90 95 100 80 Q110 95 120 120 Q105 135 95 135 Q80 135 80 120" 
+    fill="#ffa500">
+    <animate
+      attributeName="d"
+      values="M80 120 Q90 95 100 80 Q110 95 120 120 Q105 135 95 135 Q80 135 80 120;
+              M82 118 Q92 90 100 75 Q108 90 118 118 Q103 133 97 133 Q82 133 82 118;
+              M80 120 Q90 95 100 80 Q110 95 120 120 Q105 135 95 135 Q80 135 80 120"
+      dur="0.7s"
+      repeatCount="indefinite"/>
+  </path>
+
+  <!-- Core - more angular -->
+  <path d="M90 120 Q95 105 100 90 Q105 105 110 120 Q100 130 90 120" 
+    fill="#fff700">
+    <animate
+      attributeName="d"
+      values="M90 120 Q95 105 100 90 Q105 105 110 120 Q100 130 90 120;
+              M92 118 Q97 100 100 85 Q103 100 108 118 Q100 128 92 118;
+              M90 120 Q95 105 100 90 Q105 105 110 120 Q100 130 90 120"
+      dur="0.3s"
+      repeatCount="indefinite"/>
+  </path>
+
+  <!-- Small flame spikes -->
+  <g>
+    <path d="M95 85 L100 75 L105 85" 
+      stroke="#ff4500" 
+      fill="none" 
+      stroke-width="2">
+      <animate
+        attributeName="d"
+        values="M95 85 L100 75 L105 85;M95 83 L100 73 L105 83;M95 85 L100 75 L105 85"
+        dur="0.5s"
+        repeatCount="indefinite"/>
+    </path>
+    <path d="M85 95 L90 85 L95 95" 
+      stroke="#ff4500" 
+      fill="none" 
+      stroke-width="2">
+      <animate
+        attributeName="d"
+        values="M85 95 L90 85 L95 95;M85 93 L90 83 L95 93;M85 95 L90 85 L95 95"
+        dur="0.6s"
+        repeatCount="indefinite"/>
+    </path>
+    <path d="M105 95 L110 85 L115 95" 
+      stroke="#ff4500" 
+      fill="none" 
+      stroke-width="2">
+      <animate
+        attributeName="d"
+        values="M105 95 L110 85 L115 95;M105 93 L110 83 L115 93;M105 95 L110 85 L115 95"
+        dur="0.4s"
+        repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Eyes -->
+  <g transform="translate(0,5)">
+    <circle cx="90" cy="110" r="4" fill="#333">
+      <animate
+        attributeName="cy"
+        values="110;108;110"
+        dur="2s"
+        repeatCount="indefinite"/>
+    </circle>
+    <circle cx="110" cy="110" r="4" fill="#333">
+      <animate
+        attributeName="cy"
+        values="110;108;110"
+        dur="2s"
+        repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Mouth -->
+  <path d="M95 120 Q100 125 105 120" 
+    fill="none" 
+    stroke="#333" 
+    stroke-width="2"
+    stroke-linecap="round">
+    <animate
+      attributeName="d"
+      values="M95 120 Q100 125 105 120;
+              M95 122 Q100 127 105 122;
+              M95 120 Q100 125 105 120"
+      dur="1s"
+      repeatCount="indefinite"/>
+  </path>
+
+  <!-- Wood logs -->
+  <path d="M60 140 L140 140" 
+    stroke="#8B4513" 
+    stroke-width="8" 
+    stroke-linecap="round"/>
+  <path d="M70 148 L130 148" 
+    stroke="#8B4513" 
+    stroke-width="8" 
+    stroke-linecap="round"/>
+
+  <!-- More angular floating embers -->
+  <path d="M85 90 L87 88 L85 86 L83 88 Z" fill="#fff700">
+    <animate
+      attributeName="transform"
+      type="translate"
+      values="0,0; 0,-20; 0,0"
+      dur="2s"
+      repeatCount="indefinite"/>
+    <animate
+      attributeName="opacity"
+      values="1;0;1"
+      dur="2s"
+      repeatCount="indefinite"/>
+  </path>
+  <path d="M115 95 L117 93 L115 91 L113 93 Z" fill="#fff700">
+    <animate
+      attributeName="transform"
+      type="translate"
+      values="0,0; 0,-20; 0,0"
+      dur="1.5s"
+      repeatCount="indefinite"/>
+    <animate
+      attributeName="opacity"
+      values="1;0;1"
+      dur="1.5s"
+      repeatCount="indefinite"/>
+  </path>
+</svg>
