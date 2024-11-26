@@ -25,4 +25,4 @@ A collection of adorable animated SVG icons inspired by Studio Ghibli characters
 ---
 💫 Drop a star if you like this project!
 
-<img src="totoro-infographic.svg" width="200" height="200" alt="Ghibli-Fan">
+<img src="totoro-infographic.svg" width="400" height="400" alt="Ghibli-Fan">
