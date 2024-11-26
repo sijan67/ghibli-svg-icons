@@ -114,8 +114,8 @@
     <g transform="translate(50,550)">
       <animate attributeName="opacity" values="0;1" dur="1s" begin="1s" fill="freeze"/>
       <rect x="0" y="0" width="250" height="80" rx="10" fill="#4a7c59" opacity="0.9"/>
-      <text x="100" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="white">Ghibli Fan</text>
-      <text x="100" y="60" text-anchor="middle" font-family="Arial" font-size="24" fill="white" font-weight="bold">Find me @sijan67</text>
+      <text x="125" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="white">Ghibli Fan</text>
+      <text x="125" y="60" text-anchor="middle" font-family="Arial" font-size="24" fill="white" font-weight="bold">Find me @sijan67</text>
     </g>
   </g>
   
