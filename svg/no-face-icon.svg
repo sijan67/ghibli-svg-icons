@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Shadowy Body with gradient -->
+  <defs>
+    <linearGradient id="fadeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#333333;stop-opacity:1"/>
+      <stop offset="80%" style="stop-color:#333333;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#333333;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Main flowing body -->
+  <path d="M70 40 Q100 35 130 40 Q150 60 150 100 Q150 180 100 190 Q50 180 50 100 Q50 60 70 40" 
+    fill="url(#fadeGradient)">
+    <animate 
+      attributeName="d" 
+      values="M70 40 Q100 35 130 40 Q150 60 150 100 Q150 180 100 190 Q50 180 50 100 Q50 60 70 40;
+              M70 42 Q100 37 130 42 Q152 62 152 102 Q152 182 100 192 Q48 182 48 102 Q48 62 70 42;
+              M70 40 Q100 35 130 40 Q150 60 150 100 Q150 180 100 190 Q50 180 50 100 Q50 60 70 40"
+      dur="4s"
+      repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Mask -->
+  <path d="M75 45 Q100 40 125 45 Q135 55 135 70 Q135 85 125 95 Q100 100 75 95 Q65 85 65 70 Q65 55 75 45" 
+    fill="#f5f5f0"/>
+  
+  <!-- Eyes -->
+  <path d="M85 65 L95 65" 
+    fill="none" 
+    stroke="#333333" 
+    stroke-width="2"
+    stroke-linecap="round"/>
+  <path d="M105 65 L115 65" 
+    fill="none" 
+    stroke="#333333" 
+    stroke-width="2"
+    stroke-linecap="round"/>
+  
+  <!-- Purple markings -->
+  <path d="M83 60 L93 60" 
+    fill="none" 
+    stroke="#8b7bd3" 
+    stroke-width="2"/>
+  <path d="M107 60 L117 60" 
+    fill="none" 
+    stroke="#8b7bd3" 
+    stroke-width="2"/>
+  
+  <!-- Mouth -->
+  <path d="M95 75 Q100 77 105 75" 
+    fill="none" 
+    stroke="#333333" 
+    stroke-width="2"
+    stroke-linecap="round">
+    <animate 
+      attributeName="d" 
+      values="M95 75 Q100 77 105 75;
+              M95 76 Q100 78 105 76;
+              M95 75 Q100 77 105 75"
+      dur="3s"
+      repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Subtle flowing effect at bottom -->
+  <path d="M60 120 Q100 130 140 120" 
+    fill="none" 
+    stroke="url(#fadeGradient)" 
+    stroke-width="20" 
+    opacity="0.3">
+    <animate 
+      attributeName="d" 
+      values="M60 120 Q100 130 140 120;
+              M58 122 Q100 132 142 122;
+              M60 120 Q100 130 140 120"
+      dur="3s"
+      repeatCount="indefinite"/>
+  </path>
+</svg>

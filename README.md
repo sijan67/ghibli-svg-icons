@@ -10,4 +10,6 @@ This repository contains animated SVG icons.
 - **Jiji Icon**  
   <img src="./svg/jiji-cat-icon.svg" width="200" height="200" alt="Animated Jiji Cat">
 
+- **No Face Icon**  
+  <img src="./svg/no-face-icon.svg" width="200" height="200" alt="No Face">
 
