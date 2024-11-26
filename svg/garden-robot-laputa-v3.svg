@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="metalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A4A3A"/>
+      <stop offset="100%" style="stop-color:#2A2A1A"/>
+    </linearGradient>
+    <linearGradient id="faceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C8B172"/>
+      <stop offset="100%" style="stop-color:#A89860"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Body -->
+  <ellipse cx="100" cy="95" rx="25" ry="30" fill="url(#metalGradient)">
+    <animate
+      attributeName="cy"
+      values="95;97;95"
+      dur="2s"
+      repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- Neck -->
+  <rect x="95" y="70" width="10" height="8" fill="url(#metalGradient)">
+    <animate
+      attributeName="y"
+      values="70;72;70"
+      dur="2s"
+      repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Head Base (Helmet) - Made smaller and more rounded -->
+  <path d="M88 55 Q100 45 112 55 L112 70 Q100 75 88 70 Z" fill="url(#metalGradient)">
+    <animate
+      attributeName="d"
+      values="M88 55 Q100 45 112 55 L112 70 Q100 75 88 70 Z;
+              M88 57 Q100 47 112 57 L112 72 Q100 77 88 72 Z;
+              M88 55 Q100 45 112 55 L112 70 Q100 75 88 70 Z"
+      dur="2s"
+      repeatCount="indefinite"/>
+  </path>
+
+  <!-- Face Plate - Adjusted for smaller head -->
+  <path d="M90 58 Q100 50 110 58 L110 68 Q100 73 90 68 Z" fill="url(#faceGradient)">
+    <animate
+      attributeName="d"
+      values="M90 58 Q100 50 110 58 L110 68 Q100 73 90 68 Z;
+              M90 60 Q100 52 110 60 L110 70 Q100 75 90 70 Z;
+              M90 58 Q100 50 110 58 L110 68 Q100 73 90 68 Z"
+      dur="2s"
+      repeatCount="indefinite"/>
+  </path>
+
+  <!-- Eyes - Repositioned for smaller head -->
+  <g>
+    <!-- Left Eye -->
+    <circle cx="95" cy="62" r="4" fill="#000">
+      <animate
+        attributeName="cy"
+        values="62;64;62"
+        dur="2s"
+        repeatCount="indefinite"/>
+    </circle>
+    <circle cx="95" cy="62" r="2.5" fill="#ffeb3b">
+      <animate
+        attributeName="cy"
+        values="62;64;62"
+        dur="2s"
+        repeatCount="indefinite"/>
+      <animate
+        attributeName="opacity"
+        values="1;0.5;1"
+        dur="1s"
+        repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Right Eye -->
+    <circle cx="105" cy="62" r="4" fill="#000">
+      <animate
+        attributeName="cy"
+        values="62;64;62"
+        dur="2s"
+        repeatCount="indefinite"/>
+    </circle>
+    <circle cx="105" cy="62" r="2.5" fill="#ffeb3b">
+      <animate
+        attributeName="cy"
+        values="62;64;62"
+        dur="2s"
+        repeatCount="indefinite"/>
+      <animate
+        attributeName="opacity"
+        values="1;0.5;1"
+        dur="1s"
+        repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Extended Arms -->
+  <g>
+    <!-- Left Arm Segments -->
+    <path d="M70 85 C60 100 50 130 45 170" 
+          fill="none" 
+          stroke="url(#metalGradient)" 
+          stroke-width="8" 
+          stroke-linecap="round">
+      <animate
+        attributeName="d"
+        values="M70 85 C60 100 50 130 45 170;
+                M70 87 C60 102 50 132 45 172;
+                M70 85 C60 100 50 130 45 170"
+        dur="2s"
+        repeatCount="indefinite"/>
+    </path>
+
+    <!-- Right Arm Segments -->
+    <path d="M130 85 C140 100 150 130 155 170" 
+          fill="none" 
+          stroke="url(#metalGradient)" 
+          stroke-width="8" 
+          stroke-linecap="round">
+      <animate
+        attributeName="d"
+        values="M130 85 C140 100 150 130 155 170;
+                M130 87 C140 102 150 132 155 172;
+                M130 85 C140 100 150 130 155 170"
+        dur="2s"
+        repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Legs -->
+  <g>
+    <rect x="85" y="120" width="10" height="30" rx="5" fill="url(#metalGradient)">
+      <animate
+        attributeName="height"
+        values="30;28;30"
+        dur="2s"
+        repeatCount="indefinite"/>
+    </rect>
+    <rect x="85" y="145" width="10" height="30" rx="5" fill="url(#metalGradient)">
+      <animate
+        attributeName="y"
+        values="145;147;145"
+        dur="2s"
+        repeatCount="indefinite"/>
+    </rect>
+    <rect x="105" y="120" width="10" height="30" rx="5" fill="url(#metalGradient)">
+      <animate
+        attributeName="height"
+        values="30;28;30"
+        dur="2s"
+        repeatCount="indefinite"
+        begin="1s"/>
+    </rect>
+    <rect x="105" y="145" width="10" height="30" rx="5" fill="url(#metalGradient)">
+      <animate
+        attributeName="y"
+        values="145;147;145"
+        dur="2s"
+        repeatCount="indefinite"
+        begin="1s"/>
+    </rect>
+  </g>
+
+  <!-- Body Details -->
+  <circle cx="100" cy="95" r="3" fill="#2A2A1A"/>
+  <path d="M90 85 Q100 90 110 85" fill="none" stroke="#2A2A1A" stroke-width="1"/>
+
+  <!-- Joint Rivets -->
+  <g fill="#2A2A1A">
+    <circle cx="100" cy="95" r="2"/>
+    <circle cx="85" cy="145" r="2"/>
+    <circle cx="105" cy="145" r="2"/>
+  </g>
+</svg>
