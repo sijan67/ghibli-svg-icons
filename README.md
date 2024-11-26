@@ -7,4 +7,4 @@ This repository contains animated SVG icons.
 - **Totoro Side Icon**  
   ![Totoro Side Icon](./svg/totoro-side-icon.svg)
 
-# svg-icons
+
