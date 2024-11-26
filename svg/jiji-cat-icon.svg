@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Body -->
+  <path d="M60 120 Q100 140 140 120 Q160 100 160 80 Q160 40 100 40 Q40 40 40 80 Q40 100 60 120" 
+        fill="#1a1a1a">
+    <animate 
+      attributeName="d" 
+      values="M60 120 Q100 140 140 120 Q160 100 160 80 Q160 40 100 40 Q40 40 40 80 Q40 100 60 120;
+              M60 122 Q100 142 140 122 Q160 102 160 82 Q160 42 100 42 Q40 42 40 82 Q40 102 60 122;
+              M60 120 Q100 140 140 120 Q160 100 160 80 Q160 40 100 40 Q40 40 40 80 Q40 100 60 120"
+      dur="3s"
+      repeatCount="indefinite"/>
+  </path>
+
+  <!-- Left Ear -->
+  <path d="M70 50 L60 20 L80 50" fill="#1a1a1a">
+    <animate
+      attributeName="d"
+      values="M70 50 L60 20 L80 50;
+              M70 50 L60 15 L80 50;
+              M70 50 L60 20 L80 50"
+      dur="2s"
+      repeatCount="indefinite"/>
+  </path>
+
+  <!-- Right Ear -->
+  <path d="M120 50 L140 20 L130 50" fill="#1a1a1a">
+    <animate
+      attributeName="d"
+      values="M120 50 L140 20 L130 50;
+              M120 50 L140 15 L130 50;
+              M120 50 L140 20 L130 50"
+      dur="2s"
+      repeatCount="indefinite"/>
+  </path>
+
+  <!-- Eyes -->
+  <g>
+    <!-- Left Eye -->
+    <ellipse cx="80" cy="80" rx="8" ry="12" fill="yellow"/>
+    <ellipse cx="80" cy="80" rx="3" ry="8" fill="black">
+      <animate
+        attributeName="ry"
+        values="8;1;8"
+        dur="4s"
+        repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Right Eye -->
+    <ellipse cx="120" cy="80" rx="8" ry="12" fill="yellow"/>
+    <ellipse cx="120" cy="80" rx="3" ry="8" fill="black">
+      <animate
+        attributeName="ry"
+        values="8;1;8"
+        dur="4s"
+        repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- Nose -->
+  <circle cx="100" cy="90" r="4" fill="#ff9999"/>
+
+  <!-- Whiskers -->
+  <g stroke="#404040" stroke-width="1.5">
+    <!-- Left Whiskers -->
+    <line x1="85" y1="90" x2="55" y2="85">
+      <animate
+        attributeName="x2"
+        values="55;53;55"
+        dur="2s"
+        repeatCount="indefinite"/>
+    </line>
+    <line x1="85" y1="95" x2="55" y2="95">
+      <animate
+        attributeName="x2"
+        values="55;53;55"
+        dur="2.2s"
+        repeatCount="indefinite"/>
+    </line>
+    <line x1="85" y1="100" x2="55" y2="105">
+      <animate
+        attributeName="x2"
+        values="55;53;55"
+        dur="1.8s"
+        repeatCount="indefinite"/>
+    </line>
+
+    <!-- Right Whiskers -->
+    <line x1="115" y1="90" x2="145" y2="85">
+      <animate
+        attributeName="x2"
+        values="145;147;145"
+        dur="2s"
+        repeatCount="indefinite"/>
+    </line>
+    <line x1="115" y1="95" x2="145" y2="95">
+      <animate
+        attributeName="x2"
+        values="145;147;145"
+        dur="2.2s"
+        repeatCount="indefinite"/>
+    </line>
+    <line x1="115" y1="100" x2="145" y2="105">
+      <animate
+        attributeName="x2"
+        values="145;147;145"
+        dur="1.8s"
+        repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- Tail -->
+  <path d="M140 110 Q160 120 165 100" 
+        fill="none" 
+        stroke="#1a1a1a" 
+        stroke-width="8" 
+        stroke-linecap="round">
+    <animate
+      attributeName="d"
+      values="M140 110 Q160 120 165 100;
+              M140 110 Q160 110 170 95;
+              M140 110 Q160 120 165 100"
+      dur="3s"
+      repeatCount="indefinite"/>
+  </path>
+</svg>
