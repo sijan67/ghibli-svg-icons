@@ -2,7 +2,7 @@
 A collection of adorable animated SVG icons inspired by Studio Ghibli characters.
 
 ## Gallery
-<p align="center">
+<p>
   <img src="./svg/totoro.svg" width="200" height="200" alt="Totoro" style="display:inline-block; margin: 0 10px">
   <img src="./svg/jiji.svg" width="200" height="200" alt="Jiji" style="display:inline-block; margin: 0 10px">
   <img src="./svg/no-face.svg" width="200" height="200" alt="No Face" style="display:inline-block; margin: 0 10px">
