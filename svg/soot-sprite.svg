@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      @keyframes bounce {
+        0%, 100% { transform: translateY(0) scaleY(1); }
+        50% { transform: translateY(-20px) scaleY(0.9); }
+      }
+      @keyframes blink {
+        0%, 45%, 55%, 100% { transform: scaleY(1); }
+        50% { transform: scaleY(0.1); }
+      }
+      @keyframes sparkle {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 1; }
+      }
+      @keyframes wave {
+        0%, 100% { transform: rotate(0deg); }
+        25% { transform: rotate(15deg); }
+        75% { transform: rotate(-15deg); }
+      }
+      .bouncing {
+        animation: bounce 2s ease-in-out infinite;
+        transform-origin: center bottom;
+      }
+      .blinking {
+        animation: blink 4s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .sparkling {
+        animation: sparkle 3s ease-in-out infinite;
+      }
+      .waving {
+        animation: wave 1s ease-in-out infinite;
+        transform-origin: bottom center;
+      }
+    </style>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="#F5F5F5"/>
+
+  <!-- Main soot sprite body -->
+  <g class="bouncing">
+    <!-- Fuzzy body effect using multiple overlapping circles -->
+    <circle cx="100" cy="100" r="40" fill="#000000" opacity="0.9"/>
+    <circle cx="95" cy="95" r="38" fill="#000000" opacity="0.7"/>
+    <circle cx="105" cy="105" r="38" fill="#000000" opacity="0.7"/>
+    <circle cx="98" cy="102" r="39" fill="#000000" opacity="0.8"/>
+    
+    <!-- Eyes -->
+    <g class="blinking">
+      <!-- Left eye -->
+      <circle cx="85" cy="90" r="8" fill="white"/>
+      <circle cx="85" cy="90" r="4" fill="#000000"/>
+      <circle cx="83" cy="88" r="2" fill="white" class="sparkling"/>
+      
+      <!-- Right eye -->
+      <circle cx="115" cy="90" r="8" fill="white"/>
+      <circle cx="115" cy="90" r="4" fill="#000000"/>
+      <circle cx="113" cy="88" r="2" fill="white" class="sparkling"/>
+    </g>
+
+    <!-- Little arms/legs -->
+    <g class="waving">
+      <path d="M70 110 Q60 120 55 115" stroke="#000000" stroke-width="4" stroke-linecap="round" fill="none"/>
+      <path d="M130 110 Q140 120 145 115" stroke="#000000" stroke-width="4" stroke-linecap="round" fill="none"/>
+    </g>
+    <path d="M85 130 Q75 140 70 135" stroke="#000000" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M115 130 Q125 140 130 135" stroke="#000000" stroke-width="4" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Dust particles -->
+  <circle cx="160" cy="50" r="2" fill="#333" class="sparkling"/>
+  <circle cx="40" cy="60" r="2" fill="#333" class="sparkling"/>
+  <circle cx="170" cy="150" r="2" fill="#333" class="sparkling"/>
+  <circle cx="30" cy="140" r="2" fill="#333" class="sparkling"/>
+</svg>
