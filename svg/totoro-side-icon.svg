@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Body -->
+  <path d="M60 140 Q100 160 140 140 Q160 120 160 90 Q160 50 120 40 Q100 35 80 40 Q40 50 40 90 Q40 120 60 140" 
+        fill="#736B5E">
+    <animate attributeName="d" 
+             values="M60 140 Q100 160 140 140 Q160 120 160 90 Q160 50 120 40 Q100 35 80 40 Q40 50 40 90 Q40 120 60 140;
+                     M60 142 Q100 162 140 142 Q160 122 160 92 Q160 52 120 42 Q100 37 80 42 Q40 52 40 92 Q40 122 60 142;
+                     M60 140 Q100 160 140 140 Q160 120 160 90 Q160 50 120 40 Q100 35 80 40 Q40 50 40 90 Q40 120 60 140"
+             dur="2s" 
+             repeatCount="indefinite" />
+  </path>
+
+  <!-- Belly -->
+  <path d="M70 90 Q100 110 130 90 L130 140 Q100 160 70 140 Z" 
+        fill="#D8C8B8" />
+  
+  <!-- Belly pattern -->
+  <path d="M80 120 L85 115 L90 120 L95 115 L100 120 L105 115 L110 120 L115 115 L120 120" 
+        fill="none" 
+        stroke="#736B5E" 
+        stroke-width="2" />
+  
+  <!-- Eye -->
+  <circle cx="150" cy="70" r="6" fill="white" />
+  <circle cx="152" cy="70" r="4" fill="black" />
+  
+  <!-- Ears -->
+  <path d="M120 45 L130 30 L140 45" fill="#736B5E">
+    <animate attributeName="d" 
+             values="M120 45 L130 30 L140 45;M120 47 L130 32 L140 47;M120 45 L130 30 L140 45" 
+             dur="2s" 
+             repeatCount="indefinite" />
+  </path>
+  <path d="M100 42 L110 27 L120 42" fill="#736B5E">
+    <animate attributeName="d" 
+             values="M100 42 L110 27 L120 42;M100 44 L110 29 L120 44;M100 42 L110 27 L120 42" 
+             dur="2s" 
+             repeatCount="indefinite" />
+  </path>
+
+  <!-- Whiskers -->
+  <g stroke="#33302E" stroke-width="1.5">
+    <line x1="155" y1="75" x2="170" y2="73">
+      <animate attributeName="x2" values="170;172;170" dur="3s" repeatCount="indefinite" />
+    </line>
+    <line x1="155" y1="80" x2="170" y2="82">
+      <animate attributeName="x2" values="170;172;170" dur="3s" repeatCount="indefinite" />
+    </line>
+  </g>
+</svg>
