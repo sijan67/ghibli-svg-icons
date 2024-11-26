@@ -20,3 +20,9 @@ A collection of adorable animated SVG icons inspired by Studio Ghibli characters
 | Calcifer | A lively fire demon with flickering flames and glowing effects |
 | Garden Robot | A gentle guardian robot from Laputa with glowing eyes and long swaying arms |
 | Soot Sprite | A bouncy Makkuro Kurosuke with blinking eyes and waving arms | 
+
+
+---
+💫 Drop a star if you like this project!
+
+<img src="svg/totoro-infographic.svg" width="200" height="200" alt="Ghibli-Fan">
