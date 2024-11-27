@@ -10,6 +10,7 @@ A collection of adorable animated SVG icons inspired by Studio Ghibli characters
 <img src="svg/garden-robot-laputa-v3.svg" width="200" height="200" alt="Garden Robot">
 <img src="svg/soot-sprite.svg" width="200" height="200" alt="Soot Sprite">
 <img src="svg/catbus.svg" width="200" height="200" alt="Catbus">
+<img src="svg/kodama-spirit.svg" width="200" height="200" alt="Kodama">
 </p>
 
 ## Icons List
@@ -22,6 +23,7 @@ A collection of adorable animated SVG icons inspired by Studio Ghibli characters
 | Garden Robot | A gentle guardian robot from Laputa with glowing eyes and long swaying arms |
 | Soot Sprite | A bouncy Makkuro Kurosuke with blinking eyes and waving arms | 
 | Cat Bus | The grinning cat vehicle with glowing eyes and swishing tail |
+| Kodama | A forest spirit from Princess Mononoke with bobbing head and glowing aura |
 
 
 ---
