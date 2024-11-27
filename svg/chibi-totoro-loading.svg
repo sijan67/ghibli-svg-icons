@@ -23,11 +23,11 @@
   <circle cx="100" cy="90" r="4" fill="white"/>
   
   <!-- White belly with smaller semi-circular markings -->
-  <!-- <path d="M75 120 C75 150 125 150 125 120 C125 100 75 100 75 120" fill="white"/>
-  <path d="M88 125 C88 132 94 132 94 125 C94 118 88 118 88 125" fill="black"/>
+  <path d="M75 120 C75 150 125 150 125 120 C125 100 75 100 75 120" fill="white"/>
+  <!-- <path d="M88 125 C88 132 94 132 94 125 C94 118 88 118 88 125" fill="black"/>
   <path d="M97 125 C97 132 103 132 103 125 C103 118 97 118 97 125" fill="black"/>
-  <path d="M106 125 C106 132 112 132 112 125 C112 118 106 118 106 125" fill="black"/>
-   -->
+  <path d="M106 125 C106 132 112 132 112 125 C112 118 106 118 106 125" fill="black"/> -->
+  
   <!-- Loading animation - rotating arc -->
   <path d="M100 170 A70 70 0 0 1 30 100" stroke="#4a4a4a" stroke-width="4" fill="none">
     <animateTransform
