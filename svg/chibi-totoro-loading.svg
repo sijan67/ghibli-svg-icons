@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="#f0f0f0"/>
+  
+  <!-- Totoro body -->
+  <path d="M100 40 C60 40 40 80 40 120 C40 160 70 170 100 170 C130 170 160 160 160 120 C160 80 140 40 100 40" fill="black"/>
+  
+  <!-- Longer ears - more upright and rounded at tips -->
+  <path d="M75 45 C75 15 85 10 90 40 L75 45" fill="black"/>
+  <path d="M125 45 C125 15 115 10 110 40 L125 45" fill="black"/>
+  
+  <!-- Eyes -->
+  <circle cx="80" cy="80" r="10" fill="white"/>
+  <circle cx="120" cy="80" r="10" fill="white"/>
+  <circle cx="80" cy="80" r="5" fill="black">
+    <animate attributeName="r" values="5;3;5" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="120" cy="80" r="5" fill="black">
+    <animate attributeName="r" values="5;3;5" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- White Nose -->
+  <circle cx="100" cy="90" r="4" fill="white"/>
+  
+  <!-- White belly with smaller semi-circular markings -->
+  <!-- <path d="M75 120 C75 150 125 150 125 120 C125 100 75 100 75 120" fill="white"/>
+  <path d="M88 125 C88 132 94 132 94 125 C94 118 88 118 88 125" fill="black"/>
+  <path d="M97 125 C97 132 103 132 103 125 C103 118 97 118 97 125" fill="black"/>
+  <path d="M106 125 C106 132 112 132 112 125 C112 118 106 118 106 125" fill="black"/>
+   -->
+  <!-- Loading animation - rotating arc -->
+  <path d="M100 170 A70 70 0 0 1 30 100" stroke="#4a4a4a" stroke-width="4" fill="none">
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 100 100"
+      to="360 100 100"
+      dur="2s"
+      repeatCount="inheritCount"/>
+  </path>
+</svg>

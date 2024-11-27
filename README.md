@@ -11,6 +11,7 @@ A collection of adorable animated SVG icons inspired by Studio Ghibli characters
 <img src="svg/soot-sprite.svg" width="200" height="200" alt="Soot Sprite">
 <img src="svg/catbus.svg" width="200" height="200" alt="Catbus">
 <img src="svg/kodama-spirit.svg" width="200" height="200" alt="Kodama">
+<img src="svg/chibi-totoro-loading.svg" width="200" height="200" alt="Totoro">
 </p>
 
 ## Icons List
@@ -24,6 +25,7 @@ A collection of adorable animated SVG icons inspired by Studio Ghibli characters
 | Soot Sprite | A bouncy Makkuro Kurosuke with blinking eyes and waving arms | 
 | Cat Bus | The grinning cat vehicle with glowing eyes and swishing tail |
 | Kodama | A forest spirit from Princess Mononoke with bobbing head and glowing aura |
+| Chibi Totoro | An adorable chibi version of the friendly forest spirit with loading icon|
 
 
 ---
